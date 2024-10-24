@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <style>
+        .button {
+            background-color: blue ;
+            color: white ;
+            margin: 0px 0px ;
+            font-weight: bold ;
+            cursor: pointer ;
+            padding: 10px 20px ;
+            font-size: 20px ;
+            border-radius: 17px ;
+        }
+        .button:hover {
+            background-color: aqua;
+            color: black;
+        }
+        .h1 {
+            font-family: "Arial";
+            font-weight: bold;
+            font-size: 36px;
+        }
+    </style>
+    <script>
+        function Onclick() {
+            const h1 = document.getElementById("h1")
+            h1.textContent = "Thanks!"
+            setTimeout(function() {
+                h1.textContent = ""
+            }, 2000)
+        }
+    </script>
+</head>
+<body>
+    <button class="button" onclick="Onclick()">Press Me!</button>
+    <h1 class="h1" id="h1"></h1>
+</body>
+</html>
